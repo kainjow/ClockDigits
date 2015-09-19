@@ -144,7 +144,6 @@
     if (hour > 12) {
         hour -= 12;
     }
-    NSInteger myval = (hour * 10000) + (minute * 100) + second;
     for (NSInteger val = _counter; val > 0; val /= 10) {
         [digits insertObject:@(val % 10) atIndex:0];
     }
